@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+
+{% block body %} 
+<main>
+    <section>
+        <p>
+            {% for r in restaurants_list %} 
+            <ul>
+                <li>{{ r.address.building }}</li>
+                <li>{{ r.cuisine }}</li>
+                <li>{{ r.name }}</li>
+            </ul>
+            {% endfor %}
+        </p>
+    </section>
+</main>
+{% endblock %}

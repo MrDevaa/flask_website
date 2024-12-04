@@ -1,0 +1,19 @@
+{% extends 'layout.html'
+ %}
+
+{% block body %} 
+<main>
+    <section>
+        <p>
+            {% for b in books_list %} 
+            <ul>
+                <li>{{b.title}}</li>
+                <li>{{b.status}}</li>
+                <li>{{b.categories.0}}</li>
+            </ul>
+            {% endfor %}
+        </p>
+    </section>
+</main>
+
+{% endblock %}

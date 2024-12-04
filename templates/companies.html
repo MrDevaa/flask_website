@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+
+{% block body %} 
+<main>
+    <section>
+        {% for c in companies_list %} 
+        <ul>
+          <li>{{c.name}}</li>
+          <li>{{c.homepage_url}}</li>
+        </ul>
+        {% endfor %}
+    </section>
+</main>
+
+{% endblock %}
